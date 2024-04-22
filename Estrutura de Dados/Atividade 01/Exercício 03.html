@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir Anos</title>
+</head>
+<body>
+<script>
+    var anoAtual = new Date().getFullYear();
+
+    var anoNascimento = 2002;
+
+    document.write("<h2>Anos do ano atual até o ano de nascimento:</h2>");
+    document.write("<ul>");
+    for (var ano = anoAtual; ano >= anoNascimento; ano--) {
+        document.write("<li>" + ano + "</li>");
+    }
+    document.write("</ul>");
+</script>
+</body>
+</html>

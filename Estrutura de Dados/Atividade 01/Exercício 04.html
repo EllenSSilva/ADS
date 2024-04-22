@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Idades</title>
+</head>
+<body>
+<script>
+    var maioresDeIdade = 0;
+    var menoresDeIdade = 0;
+    
+    for (var i = 1; i <= 10; i++) {
+        var idade = parseInt(prompt("Digite a idade da pessoa " + i + ":"));
+
+        if (!isNaN(idade)) {
+            if (idade >= 18) {
+                maioresDeIdade++;
+            } else {
+                menoresDeIdade++;
+            }
+        } else {
+            alert("Por favor, insira uma idade válida para a pessoa " + i + ".");
+            i--;
+        }
+    }
+    alert("Das 10 pessoas, " + maioresDeIdade + " são maiores de idade e " + menoresDeIdade + " são menores de idade.");
+
+</script>
+</body>
+</html>
