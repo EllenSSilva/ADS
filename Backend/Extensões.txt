@@ -1,0 +1,21 @@
+Extensões:
+
+# Iniciar projeto
+npm init
+
+# Instalar bibliotecas
+npm install express
+npm install nodemon
+
+RODAR O PROJETO
+
+npm start
+
+- Instale a dependência do prompt-sync utilizando o comando: npm install prompt-sync.
+
+
+TODAS 
+
+npm install express nodemon dotenv mongoose
+
+npm install yup
