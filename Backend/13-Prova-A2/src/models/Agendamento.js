@@ -11,11 +11,13 @@ const schema = new mongoose.Schema(
             required: true
         },
         pet: {
-            type: mongoose.Schema.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
+            ref: 'pet',
             required: true
         },
         servico: {
-            type: mongoose.Schema.Types.ObjectId,
+            type: mongoose.Types.ObjectId,
+            ref: 'servico',
             required: true
         },
     },
