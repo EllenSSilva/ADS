@@ -1,7 +1,6 @@
 {
   "name": "13-prova-a2",
   "version": "1.0.0",
-  "description": "",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon",
@@ -10,11 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.1",
     "nodemon": "^3.1.2",
     "prompt-sync": "^4.2.0",
     "yup": "^1.4.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "description": ""
 }
