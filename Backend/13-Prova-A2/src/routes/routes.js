@@ -17,38 +17,38 @@ const { validarPet } = require('../validators/PetValidator');
 const { validarServico } = require('../validators/ServicoValidator');
 
 // Agendamento
-router.get('/agendamentos', AgendamentoController.buscarTodos);
-router.get('/agendamentos/:id', validarID, AgendamentoController.buscarPorID);
-router.post('/agendamentos', validarAgendamento, AgendamentoController.criar);
-router.put('/agendamentos/:id', validarID, validarAgendamento, AgendamentoController.atualizar);
-router.delete('/agendamentos/:id', validarID, AgendamentoController.excluir);
+router.get('/agendamento', AgendamentoController.buscarTodos);
+router.get('/agendamento/:id', validarID, AgendamentoController.buscarPorID);
+router.post('/agendamento', validarAgendamento, AgendamentoController.criar);
+router.put('/agendamento/:id', validarID, validarAgendamento, AgendamentoController.atualizar);
+router.delete('/agendamento/:id', validarID, AgendamentoController.excluir);
 
 // Cliente
-router.get('/clientes', ClienteController.buscarTodos);
-router.get('/clientes/:id', validarID, ClienteController.buscarPorID);
-router.post('/clientes', validarCliente, ClienteController.criar);
-router.put('/clientes/:id', validarID, validarCliente, ClienteController.atualizar);
-router.delete('/clientes/:id', validarID, ClienteController.excluir);
+router.get('/cliente', ClienteController.buscarTodos);
+router.get('/cliente/:id', validarID, ClienteController.buscarPorID);
+router.post('/cliente', validarCliente, ClienteController.criar);
+router.put('/cliente/:id', validarID, validarCliente, ClienteController.atualizar);
+router.delete('/cliente/:id', validarID, ClienteController.excluir);
 
 // Funcionario
-router.get('/funcionarios', FuncionarioController.buscarTodos);
-router.get('/funcionarios/:id', validarID, FuncionarioController.buscarPorID);
-router.post('/funcionarios', validarFuncionario, FuncionarioController.criar);
-router.put('/funcionarios/:id', validarID, validarFuncionario, FuncionarioController.atualizar);
-router.delete('/funcionarios/:id', validarID, FuncionarioController.excluir);
+router.get('/funcionario', FuncionarioController.buscarTodos);
+router.get('/funcionario/:id', validarID, FuncionarioController.buscarPorID);
+router.post('/funcionario', validarFuncionario, FuncionarioController.criar);
+router.put('/funcionario/:id', validarID, validarFuncionario, FuncionarioController.atualizar);
+router.delete('/funcionario/:id', validarID, FuncionarioController.excluir);
 
 // Pet
-router.get('/pets', PetController.buscarTodos);
-router.get('/pets/:id', validarID, PetController.buscarPorID);
-router.post('/pets', validarPet, PetController.criar);
-router.put('/pets/:id', validarID, validarPet, PetController.atualizar);
-router.delete('/pets/:id', validarID, PetController.excluir);
+router.get('/pet', PetController.buscarTodos);
+router.get('/pet/:id', validarID, PetController.buscarPorID);
+router.post('/pet', validarPet, PetController.criar);
+router.put('/pet/:id', validarID, validarPet, PetController.atualizar);
+router.delete('/pet/:id', validarID, PetController.excluir);
 
 // Servico
-router.get('/servicos', ServicoController.buscarTodos);
-router.get('/servicos/:id', validarID, ServicoController.buscarPorID);
-router.post('/servicos', validarServico, ServicoController.criar);
-router.put('/servicos/:id', validarID, validarServico, ServicoController.atualizar);
-router.delete('/servicos/:id', validarID, ServicoController.excluir);
+router.get('/servico', ServicoController.buscarTodos);
+router.get('/servico/:id', validarID, ServicoController.buscarPorID);
+router.post('/servico', validarServico, ServicoController.criar);
+router.put('/servico/:id', validarID, validarServico, ServicoController.atualizar);
+router.delete('/servico/:id', validarID, ServicoController.excluir);
 
 module.exports = router;
